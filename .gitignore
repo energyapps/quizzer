@@ -1,0 +1,11 @@
+assets/csv/
+assets/json/
+quiz.zip
+assets/quiz/markup.html
+assets/quiz/preview.html
+assets/data.json
+assets/footer.json
+assets/header.json
+assets/xlsx/
+*.zip
+~$template.xlsx
