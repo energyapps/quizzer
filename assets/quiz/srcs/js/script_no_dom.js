@@ -1,15 +1,21 @@
 
+(function ($) {
+
+  $(document).foundation();
+
+
+/*
+ * Script to run it!
+*/
+
 $(document).ready(function(){    //moved to /server/fetcher-archiver.js 
 	makeitwork();
 });
-
-
 
 function makeitwork (){
 	// some variables
 	var NumOfQuestions = $('.question-individual').length
 	
-	// var NumOfQuestions = 11;
 	var QuestionIndex = []; // array of 0's and iteratate through based on order of questions in the dom.....
 	var TotalAnswered = 0; //begin with 0 answered questions
 	var TotalCorrect = 0;
@@ -18,7 +24,6 @@ function makeitwork (){
 		QuestionIndex.push(0);
 	};
 
-	(function ($) { 
 	//clicking the first time per question causes a question to be answered. after that it does nothing. (see if statement inside)
 	$('.a-bg').click(function (e) {
 		e.preventDefault();
@@ -60,7 +65,6 @@ function makeitwork (){
 // Loop through each correct answer bucket and create the if statemet to attach correct classes 
 				
 				$( "#footer-container" ).children('div').each(function(){
-				// $(".result-text").get().each(function(){
 					var endpoint = parseInt($(this).attr("endpoint"))
 					var endclass = this.id
 
@@ -76,17 +80,14 @@ function makeitwork (){
 			};
 		};
 	});
-	}(jQuery));  
-
 
 	// on each click of button, change total correct/incorrect number....use that as a trigger
 
-	(function ($) { 
 		$(document).ready(function() { 
 
 			// on load, display 0 out of N
 			$('#results').html("<h1>" + TotalCorrect + "/" + NumOfQuestions + "</h1>")
 		});
-	}(jQuery));  
 
 }
+}(jQuery)); 
