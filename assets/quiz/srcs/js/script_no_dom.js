@@ -7,9 +7,9 @@ $(document).ready(function(){    //moved to /server/fetcher-archiver.js
 
 function makeitwork (){
 	// some variables
-	// var NumOfQuestions = data.length;
+	var NumOfQuestions = $('.question-individual').length
 	
-	var NumOfQuestions = 11;
+	// var NumOfQuestions = 11;
 	var QuestionIndex = []; // array of 0's and iteratate through based on order of questions in the dom.....
 	var TotalAnswered = 0; //begin with 0 answered questions
 	var TotalCorrect = 0;
@@ -64,7 +64,7 @@ function makeitwork (){
 					var endpoint = parseInt($(this).attr("endpoint"))
 					var endclass = this.id
 
-					if (TotalCorrect < endpoint) {
+					if (TotalCorrect <= endpoint) {
 
 					// $('#a1').addClass('active');		
 						$('#' + endclass).addClass('active');	

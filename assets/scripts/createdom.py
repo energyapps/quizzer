@@ -80,13 +80,13 @@ for i in range(0, len(data)):
 	data[i]['question'] + \
 	'</p></div><div class="rowDOE full-size-blocks"><div class="large-12 columnsDOE map-image">' + \
 	headImg + \
-	'</div></div><div class="answers"><div class="large-12 columnsDOE halves"><div class="medium-6 small-12 columnsDOE a-options first-c"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass1 + ' q' + str(i+1) + ' ' + g[0][1] + '" data-id=' + str(i) + '><p>' + \
+	'</div></div><div class="answers"><div class="large-12 columnsDOE halves"><div class="medium-6 small-12 columnsDOE a-options first-c"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass1 + ' q' + str(i+1) + ' ' + g[0][1] + '" data-id="' + str(i) + '"><p>' + \
 	g[0][0] +  \
-	'</p></div></div><div class="medium-6 small-12 columnsDOE a-options"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass1 + ' q' + str(i+1) + ' ' + g[1][1] + '" data-id=' + str(i) + '><p>' + \
+	'</p></div></div><div class="medium-6 small-12 columnsDOE a-options"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass1 + ' q' + str(i+1) + ' ' + g[1][1] + '" data-id="' + str(i) + '"><p>' + \
 	g[1][0] + \
-	'</p></div></div></div><div class="large-12 columnsDOE halves"><div class="medium-6 small-12 columnsDOE a-options"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass2 + ' q' + str(i+1) + ' ' + g[2][1] + '" data-id=' + str(i) + '><p>' + \
+	'</p></div></div></div><div class="large-12 columnsDOE halves"><div class="medium-6 small-12 columnsDOE a-options"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass2 + ' q' + str(i+1) + ' ' + g[2][1] + '" data-id="' + str(i) + '"><p>' + \
 	g[2][0] + \
-	'</p></div></div><div class="medium-6 small-12 columnsDOE a-options last-c"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass2 + ' q' + str(i+1) + ' ' + g[3][1] + '" data-id=' + str(i) + '><p>' + \
+	'</p></div></div><div class="medium-6 small-12 columnsDOE a-options last-c"><div class="large-12 medium-12 small-12 small-centered a-bg ' + hgtclass2 + ' q' + str(i+1) + ' ' + g[3][1] + '" data-id="' + str(i) + '"><p>' + \
 	g[3][0] + \
 	'</p></div></div></div></div>' + contInfo + '<div class="rowDOE"><div class="large-12 tweener"></div></div></div>'
 
