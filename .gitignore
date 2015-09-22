@@ -10,4 +10,4 @@ assets/xlsx/
 *.zip
 ~$template.xlsx
 ~\$template.xlsx
-.DS_Store
+*.DS_Store
