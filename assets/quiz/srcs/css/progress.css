@@ -1,0 +1,44 @@
+#progress {
+	height: 10px;
+	width: 100%;
+	/*position: fixed;*/
+	top: 0px;
+	z-index: 10;
+	opacity: 0.8;
+	cursor: pointer;
+	margin-right: 0px;
+	padding-right: 0px;
+
+}
+
+.prog {
+	height: 100%;
+	float: left;
+	background-color: rgb(51,51,51)
+}
+
+.prog:last-child {
+	/*width: 100px !important; */
+	/*z-index: 9;*/
+	/*background-color: orange;*/
+	/*right: 0px;
+	position: absolute;*/
+}
+
+.prog:hover {
+	opacity: 0.5
+}
+
+.prog.correct {
+	background-color: rgb(140,198,63);
+	transition: background-color 300ms ease-out;
+}
+
+.prog.wrong {
+	background-color: #ED4D61;
+	transition: background-color 300ms ease-out;
+}
+
+.prog.active {
+	opacity: 1;
+}
