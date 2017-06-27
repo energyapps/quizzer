@@ -52,6 +52,7 @@ Their are several dependencies for this script to execute on your machine. You m
 - If you rerun the script it will overwrite all of your information, but there is a log of the data you used stored in assets/xlsx.
 - Each question needs 4 answers
 - Beware, I set up a .gitignore so that csvs and jsons are not added to the repo.
+- For some reason the `in2csv` is throwing the following warnings. `/Library/Python/2.7/site-packages/agate/utils.py:275: UnnamedColumnWarning: Column 2 has no name. Using "c".` As far a I can tell these can be ignored. 
 
 
 ### CSS Classes to use 

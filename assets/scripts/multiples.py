@@ -7,8 +7,8 @@ import sys
 # print 'Argument List:', str(sys.argv)
 
 # data = load_workbook('data.xlsx')
-data = load_workbook(sys.argv[1])
 headlines = load_workbook('assets/headlines.xlsx')
+data = load_workbook(sys.argv[1])
 
 columnheads = headlines['Sheet1']
 questions = data['Questions']

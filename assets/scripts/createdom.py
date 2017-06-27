@@ -18,7 +18,7 @@ headercontent = '<div class="large-12 columnsDOE headline"><center><h2>' + heade
 #Load footer info
 footercontent = ""
 for i in range(0, len(footer)):
-	z = '<div class="large-12 columnsDOE header-color result-text" endpoint="' + footer[i]['endrange'] + '" id="a' + str(i + 1) + '"><h3>' + footer[i]['scoretext'] + '</h3></div>'         
+	z = '<div class="large-12 columnsDOE header-color result-text" endpoint="' + str(int(footer[i]['endrange'])) + '" id="a' + str(i + 1) + '"><h3>' + footer[i]['scoretext'] + '</h3></div>'         
 	footercontent = footercontent + z
 
 #Load questions
